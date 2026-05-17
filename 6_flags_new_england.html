@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lonely Coasters – Time4Coasters</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: system-ui, Segoe UI, Arial, sans-serif;
+    background: teal;
+    color: #e5e7eb;
+}
+
+/* Header */
+header {
+    background: #f3f4f4;
+    border-bottom: 2px solid #1f2937;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1.25rem;
+    color: #5c6168;
+}
+h1 {
+    margin: 0 0 .25rem;
+    font-family: "Lucida Console", monospace;
+    -webkit-text-stroke: 1px white;
+}
+.subtitle {
+    font-family: "Lucida Console", monospace;
+    font-size: .95rem;
+}
+/* Carousel */
+.carousel {
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid #1f2937;
+    background: #0b1220;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.35s ease;
+}
+.carousel-track img {
+    width: 100%;
+    max-height: 420px;
+    flex-shrink: 0;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(92,97,104,0.85);
+    color: white;
+    border: 1px solid #1f2937;
+    font-size: 28px;
+    padding: 4px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 10;
+    font-family: "Lucida Console", monospace;
+}
+.carousel-btn:hover {
+    background: #5c6168;
+}
+.carousel-btn.prev { 
+    left: 10px; 
+}
+.carousel-btn.next { 
+    right: 10px; 
+}
+/* Stats */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.stat {
+    background: #e5e7eb;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: .5rem .75rem;
+    font-size: .8rem;
+}
+/* Card */
+.card {
+    background: lightgray;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 1rem;
+}
+/* Button */
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .6rem 1.2rem;
+    background: #5c6168;
+    color: white;
+    font-family: "Lucida Console", monospace;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    transition: .15s;
+}
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    background: #f3f4f4;
+    border-top: 1px solid #1f2937;
+    font-size: .75rem;
+    color: #6b7280;
+}
+/* Text */
+p {
+    margin: .6rem 0;
+    line-height: 1.5;
+}
+
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: .5rem;
+    border: 1px solid #1f2937;
+}
+
+.comment {
+    background: white;
+    color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: .5rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+      <h1>Six Flags New England</h1>
+    <div class="subtitle">RCT3 Recreation • By Time4Coasters</div>
+
+    <div class="carousel">
+      <button class="carousel-btn prev">‹</button>
+
+      <div class="carousel-track">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcc0573af.png" alt="Six Flags New England 1">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcc551c5f.png" alt="Six Flags New England 2">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcc9f2b1d.png" alt="Six Flags New England 3">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcce20e41.png" alt="Six Flags New England 4">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcd9ed12c.png" alt="Six Flags New England 5">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcdfea958.png" alt="Six Flags New England 6">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fce3b838f.png" alt="Six Flags New England 7">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fce763fa2.png" alt="Six Flags New England 8">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fceb49d62.png" alt="Six Flags New England 9">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcef76a21.png" alt="Six Flags New England 10">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fdf1e623c.png" alt="Six Flags New England 11">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fdf5e7252.png" alt="Six Flags New England 12">
+        <img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fdf99a8f0.png" alt="Six Flags New England 13">
+      </div>
+
+      <button class="carousel-btn next">›</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="stats">
+      <div class="stat">🎢 Park Type: Sandbox</div>
+      <div class="stat">📦 No Custom Scenery</div>
+      <div class="stat">❤️ 13 Likes</div>
+      <div class="stat">💬 0 Comments</div>
+    </div>
+
+    <div class="card">
+      <h2>Description</h2>
+      This is a full recreation of Six Flags New England in Agawam, Hampden County, Massachusetts, United States of America. This is a Six Flags park with 12 rollercoasters. This park originally opened in 1870. It was originally called Gallup's Grove from 1870-1886, Riverside Grove from 1887-1911, Riverside Amusement Park from 1912-1999, and then Six Flags New England after that. New for 2026 is Quantum Accelerator which is an Intamin launched family straddle coaster. There is absolutely no custom scenery in these servers.
+
+      <h3>Details</h3>
+      <p>• Game: RollerCoaster Tycoon 3</p>
+      <p>• Requirements: None (Vanilla-compatible)</p>
+      <p>• File Type: Saved Game / Scenario</p>
+
+      <a class="button" href="https://rctgo.com/downloads/view/lonely-coasters.26234" target="_blank">
+        Download ($6.99)
+      </a>
+    </div>
+
+<div class="card">
+  <h2>Comments</h2>
+
+  <div class="comment-box">
+    <input type="text" id="name" placeholder="Your name">
+    <textarea id="comment" placeholder="Write a comment..."></textarea>
+    <button onclick="addComment()" class="button">Post Comment</button>
+  </div>
+
+  <div id="comments"></div>
+</div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Time4Coasters • Fan‑made HTML showcase • Original download hosted on RCTgo
+  </div>
+</footer>
+
+<script>
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const prev = document.querySelector('.carousel-btn.prev');
+const next = document.querySelector('.carousel-btn.next');
+let index = 0;
+
+function updateCarousel() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+next.addEventListener('click', () => {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+});
+
+prev.addEventListener('click', () => {
+  index = (index - 1 + slides.length) % slides.length;
+  updateCarousel();
+});
+function loadComments() {
+  const saved = JSON.parse(localStorage.getItem('comments') || "[]");
+  const container = document.getElementById('comments');
+  container.innerHTML = '';
+
+  saved.forEach(c => {
+    const div = document.createElement('div');
+    div.className = 'comment';
+    div.innerHTML = `<strong>${c.name}</strong><br>${c.text}`;
+    container.appendChild(div);
+  });
+}
+
+function addComment() {
+  const name = document.getElementById('name').value;
+  const text = document.getElementById('comment').value;
+
+  if (!name || !text) return;
+
+  const comments = JSON.parse(localStorage.getItem('comments') || "[]");
+  comments.push({ name, text });
+
+  localStorage.setItem('comments', JSON.stringify(comments));
+
+  document.getElementById('name').value = '';
+  document.getElementById('comment').value = '';
+
+  loadComments();
+}
+
+loadComments();
+</script>
+
+</body>
+</html>

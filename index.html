@@ -13,22 +13,24 @@ body {
     color: white;
 }
 header,footer { 
-    background: #f1f1b1;
-    border-bottom: 1px solid #1f2937
+    background: #f3f4f4;
+    border-bottom: 1px solid #1f2937;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1200px;   
     margin: auto;
-    padding: 1.25rem
+    padding: 1.25rem;
+    color: #5c6168; 
 }
 .profile { 
     display: flex;
     gap: 1rem;
-    align-items: center
+    align-items: center;
+    
 }
 .avatar img {
-    width: 86px;
-    height: 86px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid black;
@@ -36,19 +38,55 @@ header,footer {
 }
 h1 { 
     margin: 0;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px white;
+    color: #5c6168; 
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+h3 {
+    color: #5c6168;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 p { 
     margin: .25rem 0 0;
-    color: #9ca3af
+    color: #5c6168;
+}
+.top-nav {
+    background: #5c6168;
+    border-bottom: 2px solid #1f2937;
+}
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-family: "Lucida Console", monospace;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+.nav-link:last-child {
+    margin-right: 0;
+}
+.nav-link:hover {
+    background: rgba(255,255,255,0.15);
+}
+.nav-right {
+    background: teal;
 }
 .grid { 
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
-    gap:1.1rem;margin-top:1.75rem
+    gap: 1.1rem;
+    margin-top: 1.75rem;
 }
 .card {
-    background: #0b1220;
+    background: lightgray;
     border: 1px solid #1f2937;
     border-radius: 16px;
     overflow: hidden;
@@ -62,14 +100,15 @@ p {
     width: 100%;
     height: 160px;
     object-fit: cover;
-    display: block
+    display: block;
 }
 .card-body {
-    padding: .85rem
+    padding: .85rem;
+    background-color: lightgray;
 }
 .title { 
     font-size: .95rem;
-    margin: 0 0 .4rem
+    margin: 0 0 .4rem;
 }
 .meta { 
     display: flex;
@@ -100,38 +139,54 @@ footer {
         <div class="avatar"><img src=time4coasters.png></div>
       <div>
         <h1>Time4Coasters</h1>
-        <p>RCT3 recreations</p>
+        <h3>RCT3 recreations</h3>       
+<nav class="top-nav">
+  <div class="container nav-inner">
+    <div class="nav-left">
+      <a href="#" class="nav-link">All Parks</a>
+      <a href="#" class="nav-link">About This Site</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://rctgo.com/downloads/members/32385" class="nav-link" target="_blank">
+        RCTgo Profile
+      </a>
+    </div>
+  </div>
+</nav>
+        <p>This is the new Time4Coasters RCT3 recreations website.  
+            Rather than being made inhouse, this one is using Phoenix 
+            Code.  In this website, you can explore all your favorite 
+            parks in RCT3 without any custom scenery so everyone can 
+            have access to these servers.</p>
       </div>
     </div>
   </div>
 </header>
-
 <main>
 <div class="container">
 <section class="grid">
 
 <!-- Each card uses a unique image seed -->
-<div class="card"><a href="https://rctgo.com/downloads/view/kings-dominion.26205"><img src="https://th.bing.com/th/id/R.ff2ebd9abf49b96f7d8837c7e15e9019?rik=mFX98DK571I6%2fQ&pid=ImgRaw&r=0"><div class="card-body"><h2 class="title">Lonely coasters</h2><div class="meta"><span class="badge">❤ 15</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/kings-dominion.26205"><img src="https://www.coaster101.com/wp-content/uploads/2015/07/DSC04902.jpg"><div class="card-body"><h2 class="title">Kings Dominion</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-new-england.26187"><img src="https://cloudfront-us-east-1.images.arcpublishing.com/advancelocal/F7A3TLIYXVEZBJRNOYCTH7PLI4.JPG"><div class="card-body"><h2 class="title">Six Flags New England</h2><div class="meta"><span class="badge">❤ 13</span><span class="badge">💬 2</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-great-adventure.26180"><img src="https://tse3.mm.bing.net/th/id/OIP.ry2CDYxlySy1ZF9ZoAOPVQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Six Flags Great Adventure</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-america.26176"><img src="https://tse1.mm.bing.net/th/id/OIP.2wpRyQfjoYSjKg8ty4a4HQHaDt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Six Flags America</h2><div class="meta"><span class="badge">❤ 13</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-over-georgia.26175"><img src="https://a.cdn-hotels.com/gdcs/production5/d1023/510b1f57-14fe-41b5-a28e-bdeba3a95aa5.jpg"><div class="card-body"><h2 class="title">Six Flags Over Georgia</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/europa-park.26170"><img src="https://tse3.mm.bing.net/th/id/OIP.pFSuFiDhsECbgiw0n7zY8QHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Europa‑Park</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/luna-park.26153"><img src="https://tse3.mm.bing.net/th/id/OIP.lhVAxI0aG-Y92s8C62afnwHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Luna Park</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-magic-mountain.26125"><img src="https://th.bing.com/th/id/R.a6c9ef1461c668aef2529423bdd0c377?rik=tEFJfdIyb3On0A&pid=ImgRaw&r=0"><div class="card-body"><h2 class="title">Six Flags Magic Mountain</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/hersheypark.26103"><img src="https://th.bing.com/th/id/R.afd3711c167085de4596b8377f00bf97?rik=drOTMSMAIGefZQ&pid=ImgRaw&r=0"><div class="card-body"><h2 class="title">Hersheypark</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/dorney-park.26095"><img src="https://www.i95exitguide.com/wp-content/uploads/2015/04/dorney_park.jpg"><div class="card-body"><h2 class="title">Dorney Park</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 1</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-st-louis.26084"><img src="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/9/2d/92d83079-6ac4-5541-9714-b54cf9056043/5b3d65db01788.image.jpg?resize=1200,796"><div class="card-body"><h2 class="title">Six Flags St. Louis</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/cedar-point.26075"><img src="https://tse4.mm.bing.net/th/id/OIP._Kz3lOUVKIls8nUR8mZWygHaDU?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Cedar Point</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/geauga-lake.26026"><img src="https://images.coasterpedia.net/thumb/b/b6/Geauga_Lake_general_view_01.jpg/300px-Geauga_Lake_general_view_01.jpg.webp"><div class="card-body"><h2 class="title">Geauga Lake</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/knotts-berry-farm.25950"><img src="https://tse3.mm.bing.net/th/id/OIP.xCC0o6kroj-naFujiycYUgHaEz?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Knott’s Berry Farm</h2><div class="meta"><span class="badge">❤ 13</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/kings-island.25862"><img src="https://tse4.mm.bing.net/th/id/OIP.IdgJpEuB3OjqPjtnMXHVxwHaDG?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Kings Island</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/lake-compounce.25857"><img src="https://thepointsguy.global.ssl.fastly.net/us/originals/2022/08/20220804_Lake-Compounce_SMayerowitz_2.jpg"><div class="card-body"><h2 class="title">Lake Compounce</h2><div class="meta"><span class="badge">❤ 15</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/pleasure-beach-resort.25842"><img src="https://www.blackpoolpleasurebeach.com/app/uploads/2025/02/Drone-shot-1.jpg"><div class="card-body"><h2 class="title">Pleasure Beach Resort</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/universal-islands-of-adventure-amp-universal-studios-florida.25761"><img src="https://tse2.mm.bing.net/th/id/OIP.1czFva0FnTIpeOGEneO9XgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Universal Islands of Adventure & Universal Studios Florida</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 1</span></div></div></a></div>
-<div class="card"><a href="https://rctgo.com/downloads/view/knoebels-amusement-resort.25681"><img src="https://tse1.mm.bing.net/th/id/OIP.000hLGveoDPlkR7ebX7hjQHaFi?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"><div class="card-body"><h2 class="title">Knoebels Amusement Resort</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
-
+<div class="card"><a href="lonely_coasters.html"><img src="https://img.rctgo.com/screenshots/2026-04/26234/69ed748ee37b8.png"><div class="card-body"><h2 class="title">Lonely coasters</h2><div class="meta"><span class="badge">❤ 15</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/kings-dominion.26205"><img src="https://img.rctgo.com/screenshots/2026-04/26205/69defc50d3564.png"><div class="card-body"><h2 class="title">Kings Dominion</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-new-england.26187"><img src="https://img.rctgo.com/screenshots/2026-04/26187/69d2fcc0573af.png"><div class="card-body"><h2 class="title">Six Flags New England</h2><div class="meta"><span class="badge">❤ 13</span><span class="badge">💬 2</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-great-adventure.26180"><img src="https://img.rctgo.com/screenshots/2026-04/26180/69cf241e06a98.png"><div class="card-body"><h2 class="title">Six Flags Great Adventure</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-america.26176"><img src="https://img.rctgo.com/screenshots/2026-04/26176/69cde3f709df5.png"><div class="card-body"><h2 class="title">Six Flags America</h2><div class="meta"><span class="badge">❤ 13</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-over-georgia.26175"><img src="https://img.rctgo.com/screenshots/2026-04/26175/69cde15035339.png"><div class="card-body"><h2 class="title">Six Flags Over Georgia</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/europa-park.26170"><img src="https://img.rctgo.com/screenshots/2026-03/26170/69cb3f9c583c1.png"><div class="card-body"><h2 class="title">Europa‑Park</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/luna-park.26153"><img src="https://img.rctgo.com/screenshots/2026-03/26153/69c1f4724465d.png"><div class="card-body"><h2 class="title">Luna Park</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-magic-mountain.26125"><img src="https://img.rctgo.com/screenshots/2026-03/26125/69ba0d04714e5.png"><div class="card-body"><h2 class="title">Six Flags Magic Mountain</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/hersheypark.26103"><img src="https://img.rctgo.com/screenshots/2026-03/26103/69acdbeed9cce.png"><div class="card-body"><h2 class="title">Hersheypark</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/dorney-park.26095"><img src="https://img.rctgo.com/screenshots/2026-03/26095/69a85c36c38da.png"><div class="card-body"><h2 class="title">Dorney Park</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 1</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/six-flags-st-louis.26084"><img src="https://img.rctgo.com/screenshots/2026-02/26084/69a3c2786cc03.png"><div class="card-body"><h2 class="title">Six Flags St. Louis</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/cedar-point.26075"><img src="https://img.rctgo.com/screenshots/2026-02/26075/699e630a429a7.png"><div class="card-body"><h2 class="title">Cedar Point</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/geauga-lake.26026"><img src="https://img.rctgo.com/screenshots/2026-02/26026/69855664c55eb.png"><div class="card-body"><h2 class="title">Geauga Lake</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/knotts-berry-farm.25950"><img src="https://img.rctgo.com/screenshots/2026-01/25950/696ee933a1de1.png"><div class="card-body"><h2 class="title">Knott’s Berry Farm</h2><div class="meta"><span class="badge">❤ 13</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/kings-island.25862"><img src="https://img.rctgo.com/screenshots/2025-12/25862/6951e3f955497.png"><div class="card-body"><h2 class="title">Kings Island</h2><div class="meta"><span class="badge">❤ 22</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/lake-compounce.25857"><img src="https://img.rctgo.com/screenshots/2025-12/25857/6950926fa54b2.png"><div class="card-body"><h2 class="title">Lake Compounce</h2><div class="meta"><span class="badge">❤ 15</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/pleasure-beach-resort.25842"><img src="https://img.rctgo.com/screenshots/2025-12/25842/694caa2d31340.png"><div class="card-body"><h2 class="title">Pleasure Beach Resort</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/universal-islands-of-adventure-amp-universal-studios-florida.25761"><img src="https://img.rctgo.com/screenshots/2025-11/25761/6928f4458b55f.png"><div class="card-body"><h2 class="title">Universal Islands of Adventure & Universal Studios Florida</h2><div class="meta"><span class="badge">❤ 16</span><span class="badge">💬 1</span></div></div></a></div>
+<div class="card"><a href="https://rctgo.com/downloads/view/knoebels-amusement-resort.25681"><img src="https://img.rctgo.com/screenshots/2025-10/25681/68febd62a5e9f.png"><div class="card-body"><h2 class="title">Knoebels Amusement Resort</h2><div class="meta"><span class="badge">❤ 10</span><span class="badge">💬 0</span></div></div></a></div>
 </section>
 </div>
 </main>
@@ -141,3 +196,4 @@ footer {
 </footer>
 </body>
 </html>
+
